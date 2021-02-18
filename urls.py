@@ -1,5 +1,9 @@
-from django.contrib import admin
-from django.urls import path, include
+"""mysite URL Configuration
+
+[...]
+"""
+from django.contrib import path, include
+from django.urls import admin
 
 urlpatterns = [
     path('admin/', admin.site.urls),
