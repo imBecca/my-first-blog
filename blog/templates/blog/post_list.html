@@ -4,5 +4,12 @@
   <body>
     <p>Ciao a tutti<br></p>
     <div>Benvenuti nel mio sito</div>
+    {%for post in posts%}
+          <div>
+            <p>pubblicato: {{post.published_date}}</p>
+            <h2>{{ post.title}}
+            <p>{{ post.text|linebreaksbr }}</p>
+          </div>
+    {% endfor %}
   </body>
 </html>
